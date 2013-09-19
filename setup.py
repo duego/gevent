@@ -92,6 +92,8 @@ ext_modules = [CORE,
                Extension(name="gevent._util",
                          sources=["gevent/gevent._util.c"])]
 
+ext_modules = []
+
 
 def make_universal_header(filename, *defines):
     defines = [('#define %s ' % define, define) for define in defines]
